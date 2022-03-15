@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+<p id="d1"></p>
+<script>
+const fruits={
+fname:"Prathyu",
+lname:"Neeradi",
+age:20,
+fullname:function()
+{
+return this.fname+" "+this.lname;
+}
+};
+document.getElementById("d1").innerHTML=fruits.fullname();
+</script>
+<p id="d2"></p>
+<script>
+let x=3;
+let y=4;
+document.getElementById("d2").innerHTML=x+y;
+</script>
+<p id="d3"></p>
+<script>
+<h1>R U Working Baby</h1>
+<p id="demo"></p>
+
+<script>
+let myNumber = 32;
+document.getElementById("demo").innerHTML =
+"32 = " + "<br>" + 
+" Decimal " + myNumber.toString(10) + "<br>" +
+" Hexadecimal " + myNumber.toString(16) + "<br>" +
+" Octal " + myNumber.toString(8) + "<br>" +
+" Binary " + myNumber.toString(2);
+</script>
+</script>
+</body>
+</html>

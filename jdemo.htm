@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My HTML Document</title>
+    <link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+<center><h1>DIGIENABLERS</h1></center>
+<h2>LEARNING JAVASCRIPT</h2>
+
+    <p>This HTML PAGE CONTAINS ALL THE TAGS I LEARNT</p>
+	
+	<p id="add"></p>
+	<p id="cell"></p>
+	<p id="namei"></p>
+	
+	
+<script>	
+
+function toCelsius(fahrenheit)
+{let c=5/9*(fahrenheit-32);
+return c;
+}
+
+document.getElementById("add").innerHTML="temperatur is " +  toCelsius(77) + " Celsius";
+
+ getinfoofcar();
+function getinfoofcar()
+{var carname ="volvo";
+
+document.getElementById("cell").innerHTML="Car name is " +carname+"  "+typeof carname;
+}
+
+
+function getfullname()
+{var firstname="prathyusha";
+var secondname="Neeradi"
+return firstname+secondname;
+}
+var name=getfullname();
+document.getElementById("namei").innerHTML="Full name of employee is  " + name;
+
+
+
+
+
+</script>
+	
+
+<h2>Demo External JavaScript</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>This example links to "myScript.js".</p>
+<p>(myFunction is stored in "myScript.js")</p>
+
+<script src="myScript.js"></script>
+	
+	
+
+<h2> JavaScript Objects</h2>	
+<p id="demo1"></p>
+<script>
+const car = {type:"Fiat", model:"500", color:"white"};
+document.getElementById("demo1").innerHTML=car.type;
+	</script>
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
+
+

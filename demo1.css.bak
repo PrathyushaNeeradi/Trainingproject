@@ -1,0 +1,22 @@
+body{
+	background-color:lightyellow;
+	text-align:center;
+  background-image: url('smiley1.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+
+h1
+{
+	color:lightblue;
+background-color:blue;
+}
+h2
+{
+	color:darkblue;
+background-color:yellow;
+}
+p{
+	color:darkblue;
+}

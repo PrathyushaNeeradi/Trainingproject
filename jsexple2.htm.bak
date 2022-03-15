@@ -1,0 +1,15 @@
+<html>
+<head>
+<link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+<h1>Learning About Statements in javascript</h1>
+<p id="d1"></p>
+<script>
+let x=10;
+y=15;
+
+document.getElementById("d1").innerHTML=x+y;
+</script>
+</body>
+</html>

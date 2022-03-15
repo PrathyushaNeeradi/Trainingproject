@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>x
+<body>
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo4"></p>
+<button type="button" onclick=" document.getElementById("demo4").innerHTML=getNumber(0,13)">click here </button>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML =text.toUpperCase();
+ 
+}
+function getNumber(a,b)
+{
+document.getElementById("demo5").innerHTML=Math.floor(Math.random()*(max-min)+min);
+}
+document.getElementById("demo1").innerHTML=Math.random();
+document.getElementById("demo1").innerHTML=Math.floor(Math.random()*10);
+
+</script>
+
+</body>
+</html>

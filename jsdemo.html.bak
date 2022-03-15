@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>My JAVASCRIPT Document</title>
+    <link rel="stylesheet" href="demo1.css">
+</head>
+<body>
+
+<h1>JAVASCRIPT<h1>
+<p>pI value is</P>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+document.getElementById("demo1").innerHTML=Math.PI;
+
+document.getElementById("demo2").innerHTML=Math.min(20,60,-1,72,828,-20);
+</script>
+
+
+
+
+<h2>JavaScript Comparison</h2>
+
+<p>Input your age and click the button:</p>
+
+
+<input id="age" value="18" placeholder="enter your age here" />
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let voteable;
+  let age = Number(document.getElementById("age").value);
+  if(isNaN(age))
+  {
+  voteable="enter a number";
+  }
+  else
+  {
+  voteable=(age < 18) ? "Too young":"Old enough";
+  }
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
+</script>
+<h2>JavaScript switch</h2>
+<p id="demo4"></p>
+<script>
+
+let day;
+
+switch(new Date().getDay())
+{
+
+case 0:day="Sunday";
+ break;
+ case 1:day="Monday";
+ break;
+ case 2:day="Tuesday";
+ break;
+ case 3:day="Wedday";
+ break;
+ case 4:day="Thursday";
+ break;
+ case 5:day="Friday";
+ break;
+ case 6: day="Saturday";
+ break;
+
+}
+document.getElementById("demo4").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+<link rel="stylesheet" href="demo1.css">
+<script>
+function myFunction3()
+{
+document.getElementById("d5").innerHTML="hellooooooo employees";
+}
+</script>
+</head>
+<body>
+<h1>Changing the Html content using Javascript</h1>
+
+<p id="d1">Hello Digi People</p>
+<button type="button" onclick='myFunction()'>Click me</button>
+<script>
+function myFunction()
+{
+document.getElementById("d1").innerHTML="hellooooooo employees";
+}
+</script>
+<h1>Changing the image source using Javascript</h1>
+
+
+<img id="myImage" src="s1.jpg" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='s2.jpg'">Smile plz</button>
+
+
+<h1>Changing the css style</h1>
+<p id="d2">Changing the font size</p>
+<button type="button" onclick="document.getElementById('d2').style.fontSize='35px'">click me</button>
+
+<h1>Hidding the Html elements</h1>
+<p id="d3">Hello how r u prathyusha</p>
+<button type="button" onclick="document.getElementById('d3').style.display='none'">click me</button>
+
+
+<h1>Show Hidden the Html elements</h1>
+<p id="d4" style="display:none">Hello how r u Vasu</p>
+<button type="button" onclick="document.getElementById('d4').style.display='block'">click me</button>
+
+<h1>javascript in head</h1>
+<p id="d5">Hello digi</p>
+<button type="button" onclick="myFunction3()">change</button>
+
+<h1>javascript in external file</h1>
+<p id="d6">Hello Everyone</p>
+<button type="button" onclick="myFunction4()">change</button>
+
+<script src="jslist.jslist"></script>
+</body>
+
+</html>
